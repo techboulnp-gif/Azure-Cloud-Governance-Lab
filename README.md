@@ -75,15 +75,15 @@ Building upon the **17,555 user identities** synchronized from the local domain 
 
 ## 🗺️ Project Roadmap & Portfolio Navigation
 
-### 📍 Current Phase: Cloud Governance & Security (In Progress)
+### 📍 Current Phase: Cloud Governance & RBAC (In Progress)
 
-This project is the final stage of an end-to-end enterprise identity lifecycle.
+This project serves as the final stage of an end-to-end enterprise identity lifecycle.
 
-* **Step 1: On-Premise Foundation** (Project 1) — Establishing the local DC and 17k users. ✅
-* **Step 2: Hybrid Cloud Bridge** (Project 2) — Synchronizing the lab via Entra Connect. ✅
-* **Step 3: Cloud Governance** (You are here) — Implementing RBAC and security policies. 📍
+* **Step 1: On-Premise Active Directory Home Lab (Project 1)** — Establishing the local DC and 17k users. ✅
+* **Step 2: Azure Hybrid Identity Lab (Project 2)** — Synchronizing local AD with Entra ID via Entra Connect. ✅
+* **Step 3: Cloud Governance & Security (Project 3)** — Implementing RBAC and security policies. 📍
 
 ### 🎓 Portfolio Navigation
 
-* [ ⬅️ Previous Project: Hybrid Identity Migration (Project 2) ](https://github.com/techboulnp-gif/Azure-Hybrid-Integration)
+* [ ⬅️ Previous Project: Azure AD Hybrid Integration ](https://github.com/techboulnp-gif/Azure-Hybrid-Integration)
 * [ 🏠 Back to Main Portfolio ](https://github.com/techboulnp-gif)
