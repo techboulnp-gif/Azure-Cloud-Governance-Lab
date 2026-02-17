@@ -58,7 +58,7 @@ Building upon the **17,555 user identities** synchronized from the local domain 
 2. **Refresh List:** Refreshed the **Members** page to verify the cloud database updated correctly.
 3. **Verification Results:** Confirmed that all 5 users, including the User Administrator `bab.gasavo`, are active members of the group.
 
-![Final Membership List](https://raw.githubusercontent.com/techboulnp-gif/Azure-Cloud-Governance/main/Phase%201/04_IT Staff Manual_Members_Final.png)
+![Final Membership List](https://github.com/techboulnp-gif/Azure-Cloud-Governance-Lab/blob/d2b1694b486cf1f99043ca17348a2bb4199c018a/Phase%201/04_IT_Staff_Manual_Members_Final.png))
 
 ### 📋 Task 5: Delegation of Support Roles (Helpdesk Admin)
 **Objective:** Demonstrate a multi-tiered support structure by delegating password management to a separate user tier.
