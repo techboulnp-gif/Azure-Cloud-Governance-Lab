@@ -70,6 +70,45 @@ Building upon the **17,555 user identities** synchronized from the local domain 
 
 ![Helpdesk Delegation](https://raw.githubusercontent.com/techboulnp-gif/Azure-Cloud-Governance/main/Phase%201/05_Helpdesk_Role_Delegation.png)
 
+## Phase 2: Configuration & Resource Management
+
+### Step 1: Security Defaults Enabled
+To establish a rigorous security baseline for the tenant, I enabled **Security Defaults** within the Microsoft Entra ID properties. This foundational step mandates Multi-Factor Authentication (MFA) registration for all users, protecting the organization from common identity-based threats like password spraying and phishing. By enabling this, we ensure that no user can bypass the security requirements regardless of their role.
+![Security Defaults Enabled](Phase%202/01_Security_Defaults_Enabled.png)
+
+### Step 2: MFA Method Configuration
+With security defaults active, I specifically configured the **Authentication Methods** allowed for our pilot group. I restricted the verification methods to the **Microsoft Authenticator app** (Push Notifications). This provides the highest level of security and the best user experience, allowing the IT staff to approve password reset requests directly from their mobile devices without needing to manage complex SMS codes or phone calls.
+![MFA Method Configuration](Phase%202/02_MFA_Method_Configuration.png)
+
+### Step 3: License Assignment
+Self-Service Password Reset (SSPR) for specific groups is an advanced identity management feature. To enable this, I activated a **Microsoft Entra ID P2 Trial**. I then performed a group-based license assignment, granting these premium licenses to every member of the **IT_Staff_Manual** group. This ensures that the specific security features required for SSPR are legally and technically provisioned for our pilot users.
+![License Assignment](Phase%202/03_License_Assignment.PNG)
+
+### Step 4: SSPR Configuration
+I moved into the **Password Reset** management blade to finalize the configuration. Instead of enabling SSPR for the entire directory, I scoped the policy to **"Selected"** and chose the **IT_Staff_Manual** group. This controlled rollout strategy allows us to test the password reset flow with a small group of users before a full company-wide deployment, ensuring the process is seamless and secure.
+![SSPR Configuration](Phase%202/04_SSPR_Configuration.PNG)
+
+### Step 5: Recurring Billing Off (Financial Safety)
+As a critical administrative safety measure, I navigated to **Billing > Your products** in the Microsoft 365 Admin Center. I located the Entra ID P2 Trial and explicitly turned **Recurring billing to Off**. This guarantees that the organization will not be charged when the trial ends on March 16, 2026. The trial remains fully active for the project's duration but will expire naturally without financial impact.
+![Recurring Billing Off](Phase%202/05_Recurring_Billing_Off.PNG)
+
+---
+
+## Phase 3: Pilot Testing & Verification
+
+### Step 1: Authentication Challenge Verification
+To verify the end-to-end configuration, I simulated a real-world "forgot password" scenario for a pilot user. After navigating to the SSPR portal and providing identification, the system correctly identified the user’s group membership and triggered the **Authentication Challenge**. As shown in the screenshot, the user was successfully intercepted and required to approve a notification on their Microsoft Authenticator app. This proves that the Entra ID P2 licenses, the SSPR policy, and the MFA registration are all functioning in perfect synchronization.
+![Authentication Challenge](Phase%203/01_Authentication_Challenge.png)
+
+---
+
+## Project Conclusion
+The implementation of SSPR for the `IT_Staff_Manual` pilot group is officially complete and verified. We have successfully enabled a zero-trust baseline, provisioned premium licenses, established cost-control safety, and verified the security gate with live testing.
+---
+
+## Conclusion
+The SSPR infrastructure is fully configured and verified. Phase 2 established the administrative requirements and cost-control safety, while Phase 3 confirmed the security gate is functional.
+
 ---
 
 ## 🗺️ Project Roadmap & Portfolio Navigation
