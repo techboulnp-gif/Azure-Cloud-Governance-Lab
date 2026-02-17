@@ -32,7 +32,7 @@ Building upon the **17,555 user identities** synchronized from the local domain 
 
 **Detailed Steps:**
 1. **Group Creation:** Navigate to **Groups** > **All groups** and click **+ New group**.
-2. **Configuration:** Set **Group type** to **Security** and name the group **`IT_Staff_Manual`**.
+2. **Configuration:** Set **Group type** to **Security** and name the group **`IT Staff Manual`**.
 3. **Licensing Constraint:** Attempted to change **Membership type** to **Dynamic User**.
     * **Note:** This option was unavailable due to the **Entra ID Free** license tier.
 4. **Engineering Decision:** To maintain project momentum, the membership type was set to **Assigned** for manual provisioning.
@@ -43,7 +43,7 @@ Building upon the **17,555 user identities** synchronized from the local domain 
 **Objective:** Manually link synced identities to the new security container for pilot testing.
 
 **Detailed Steps:**
-1. **Open Group Members:** From the `IT_Staff_Manual` group page, select **Members** from the sidebar.
+1. **Open Group Members:** From the `IT Staff Manual` group page, select **Members** from the sidebar.
 2. **Add Members:** Click **+ Add members**.
 3. **Search & Select:** Located and selected 5 specific synced identities: `bab.gasavo`, `baqet.focosi`, `bax.sos`, `bir.cakib`, and `boqaw.doju`.
 4. **Selection Verification:** Confirmed all target users appeared in the "Selected" column.
@@ -58,7 +58,7 @@ Building upon the **17,555 user identities** synchronized from the local domain 
 2. **Refresh List:** Refreshed the **Members** page to verify the cloud database updated correctly.
 3. **Verification Results:** Confirmed that all 5 users, including the User Administrator `bab.gasavo`, are active members of the group.
 
-![Final Membership List](https://raw.githubusercontent.com/techboulnp-gif/Azure-Cloud-Governance/main/Phase%201/04_IT_Staff_Manual_Members_Final.png)
+![Final Membership List](https://raw.githubusercontent.com/techboulnp-gif/Azure-Cloud-Governance/main/Phase%201/04_IT Staff Manual_Members_Final.png)
 
 ### 📋 Task 5: Delegation of Support Roles (Helpdesk Admin)
 **Objective:** Demonstrate a multi-tiered support structure by delegating password management to a separate user tier.
@@ -81,11 +81,11 @@ With security defaults active, I specifically configured the **Authentication Me
 ![MFA Method Configuration](Phase%202/02_MFA_Method_Configuration.png)
 
 ### Step 3: License Assignment
-Self-Service Password Reset (SSPR) for specific groups is an advanced identity management feature. To enable this, I activated a **Microsoft Entra ID P2 Trial**. I then performed a group-based license assignment, granting these premium licenses to every member of the **IT_Staff_Manual** group. This ensures that the specific security features required for SSPR are legally and technically provisioned for our pilot users.
+Self-Service Password Reset (SSPR) for specific groups is an advanced identity management feature. To enable this, I activated a **Microsoft Entra ID P2 Trial**. I then performed a group-based license assignment, granting these premium licenses to every member of the **IT Staff Manual** group. This ensures that the specific security features required for SSPR are legally and technically provisioned for our pilot users.
 ![License Assignment](Phase%202/03_License_Assignment.PNG)
 
 ### Step 4: SSPR Configuration
-I moved into the **Password Reset** management blade to finalize the configuration. Instead of enabling SSPR for the entire directory, I scoped the policy to **"Selected"** and chose the **IT_Staff_Manual** group. This controlled rollout strategy allows us to test the password reset flow with a small group of users before a full company-wide deployment, ensuring the process is seamless and secure.
+I moved into the **Password Reset** management blade to finalize the configuration. Instead of enabling SSPR for the entire directory, I scoped the policy to **"Selected"** and chose the **IT Staff Manual** group. This controlled rollout strategy allows us to test the password reset flow with a small group of users before a full company-wide deployment, ensuring the process is seamless and secure.
 ![SSPR Configuration](Phase%202/04_SSPR_Configuration.PNG)
 
 ### Step 5: Recurring Billing Off (Financial Safety)
@@ -103,7 +103,7 @@ To verify the end-to-end configuration, I simulated a real-world "forgot passwor
 ---
 
 ## Project Conclusion
-The implementation of SSPR for the `IT_Staff_Manual` pilot group is officially complete and verified. We have successfully enabled a zero-trust baseline, provisioned premium licenses, established cost-control safety, and verified the security gate with live testing.
+The implementation of SSPR for the `IT Staff Manual` pilot group is officially complete and verified. We have successfully enabled a zero-trust baseline, provisioned premium licenses, established cost-control safety, and verified the security gate with live testing.
 ---
 
 ## Conclusion
